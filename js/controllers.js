@@ -10,7 +10,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
     $scope.successmsg = "";
     $state.go("page", {
-        jsonName: "userView"
+        jsonName: "viewArtistCollaboration"
     });
     // $scope.user = '';
     // $scope.submitLogin = function(user) {
