@@ -53,10 +53,18 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Address",
+        "name": "Address1",
         "type": "textarea",
-        "tableRef": "address",
-        "model": "address",
+        "tableRef": "address1",
+        "model": "address1",
+        "id": "input7",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Address2",
+        "type": "textarea",
+        "tableRef": "address2",
+        "model": "address2",
         "id": "input7",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -69,10 +77,10 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Zipcode",
+        "name": "pincode",
         "type": "text",
-        "tableRef": "zipcode",
-        "model": "zipcode",
+        "tableRef": "pincode",
+        "model": "pincode",
         "id": "input9",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -110,15 +118,15 @@
         "url": ""
     }, {
         "name": "Media",
-        "type": "image",
-        "tableRef": "media",
-        "model": "media",
+        "type": "text",
+        "tableRef": "mediaFor",
+        "model": "mediaFor",
         "id": "input14",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
         "name": "Other Media : (Please give an additional description of your work, including information about the process used to create your artwork.)",
-        "type": "date",
+        "type": "textarea",
         "tableRef": "otherMedia",
         "model": "otherMedia",
         "id": "input15",
@@ -126,7 +134,7 @@
         "url": ""
     }, {
         "name": "Artwork Description",
-        "type": "text",
+        "type": "textarea",
         "tableRef": "artwork",
         "model": "artwork",
         "id": "input16",
