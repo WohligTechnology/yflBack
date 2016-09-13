@@ -26,10 +26,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
         controller: 'ProjectsCtrl'
     })
 
-    .state('personalcampaign', {
-            url: "/personalcampaign",
+    .state('artistcollaboration', {
+            url: "artistcollaboration",
             templateUrl: "views/template.html",
-            controller: 'PersonalCampaignCtrl'
+            controller: 'ArtistCollaborationCtrl'
         })
         .state('api', {
             url: "/api/:id",
@@ -54,7 +54,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
             controller: 'jsonViewCtrl'
         });
 
-    $urlRouterProvider.otherwise("/personalcampaign");
+    $urlRouterProvider.otherwise("/page/viewArtistCollaboration");
 
 });
 

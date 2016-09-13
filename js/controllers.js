@@ -1,4 +1,4 @@
-var adminURL = "http://wohlig.io:81/";
+var adminURL = "http://localhost:81/";
 var mockURL = adminURL + "callApi/";
 var search='';
 
@@ -9,10 +9,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.successmsg = "";
-    $state.go("page", {
-        jsonName: "viewArtistCollaboration"
-    });
-    // $scope.user = '';
+    // $state.go("page", {
+    //     jsonName: "viewArtistCollaboration"
+    // });
+     $scope.user = '';
     // $scope.submitLogin = function(user) {
     //     NavigationService.submitLogin(user, function(data) {
     //         console.log(data);
@@ -30,10 +30,10 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // };
 })
 
-.controller('PersonalCampaignCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('ArtistCollaborationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
-    $scope.template = TemplateService.changecontent("personalcampaign");
-    $scope.menutitle = NavigationService.makeactive("PersonalCampaign");
+    $scope.template = TemplateService.changecontent("artistcollaboration");
+    $scope.menutitle = NavigationService.makeactive("artistcollaboration");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.field = {};
@@ -764,7 +764,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $(window).scrollTop(0);
     });
     if ($.jStorage.get("user") === null) {
-        $state.go("login");
+        $state.go("artistcollaboration");
     }
 
 });

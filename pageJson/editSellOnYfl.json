@@ -121,6 +121,7 @@
         "type": "select",
         "tableRef": "booksMoviesGames",
         "model": "booksMoviesGames",
+        "option": "multiple",
         "id": "input16",
         "validation": ["required", "trim", "unique"],
         "url": [{
@@ -144,6 +145,7 @@
         "type": "select",
         "tableRef": "clothingShoesJewelry",
         "model": "clothingShoesJewelry",
+        "option": "multiple",
         "id": "input17",
         "validation": ["required", "trim", "unique"],
         "url": [{
@@ -167,6 +169,7 @@
         "type": "select",
         "tableRef": "beautyHealthGroceries",
         "model": "beautyHealthGroceries",
+        "option": "multiple",
         "id": "input18",
         "validation": ["required", "trim", "unique"],
         "url": [{

@@ -53,10 +53,18 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Address",
+        "name": "Address1",
         "type": "textarea",
-        "tableRef": "address",
-        "model": "address",
+        "tableRef": "address1",
+        "model": "address1",
+        "id": "input7",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Address2",
+        "type": "textarea",
+        "tableRef": "address2",
+        "model": "address2",
         "id": "input7",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -96,7 +104,7 @@
         "name": "Educational Qualifications",
         "type": "text",
         "tableRef": "qualifications",
-        "model" : "qualifications",
+        "model": "qualifications",
         "id": "input12",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -117,13 +125,20 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Please provide 2 references",
-        "type": "text",
-        "tableRef": "references",
-        "model": "references",
-        "id": "input15",
-        "validation": ["required", "trim", "unique"],
-        "url": ""
+            "name": "Please provide reference 1",
+            "type": "text",
+            "tableRef": "reference1",
+            "model": "reference1",
+            "id": "input15",
+            "validation": ["required", "trim", "unique"],
+            "url": ""
+    }, {
+            "name": "Please provide reference 2",
+            "type": "text",
+            "tableRef": "reference2",
+            "id": "input15",
+            "validation": ["required", "trim", "unique"],
+            "url": ""
     }, {
         "name": "Please choose how you would like to contribute to YogaFoodLove",
         "type": "text",
