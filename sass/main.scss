@@ -286,6 +286,14 @@ li.pagination-page.ng-scope.active a {
         }
     }
 }
+
+.login-shadow  {
+    box-shadow: 10px 10px 5px #888888;
+    background-image: url(../img/subscribe_bg.jpg);
+}
+.heading-padding {
+    padding-left: 85px;
+}
 /*
 Copyright 2016 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.

@@ -19,7 +19,7 @@
         "isSort": "",
         "tableRef": "mobileNumber"
     }, {
-        "name": "City",
+        "name": "Nationally",
         "isSort": "",
         "tableRef": "city"
     }],

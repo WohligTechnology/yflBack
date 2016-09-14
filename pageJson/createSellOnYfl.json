@@ -113,6 +113,7 @@
         "type": "select",
         "tableRef": "booksMoviesGames",
         "id": "input16",
+        "option": "multiple",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Books",
@@ -135,6 +136,7 @@
         "type": "select",
         "tableRef": "clothingShoesJewelry",
         "id": "input17",
+        "option": "multiple",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Clothing",
@@ -157,6 +159,7 @@
         "type": "select",
         "tableRef": "beautyHealthGroceries",
         "id": "input18",
+        "option": "multiple",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Beauty",
@@ -183,6 +186,7 @@
         "type": "select",
         "tableRef": "other",
         "id": "input20",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "true",
@@ -196,6 +200,7 @@
         "type": "select",
         "tableRef": "productsFrom",
         "id": "input18",
+        "option":"multiple", 
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Manufacture",
@@ -215,6 +220,7 @@
         "type": "select",
         "tableRef": "annualTurnover",
         "id": "input18",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Less-1lakh",
@@ -237,6 +243,7 @@
         "type": "select",
         "tableRef": "productSell",
         "id": "input18",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "1-10",
@@ -259,6 +266,7 @@
         "type": "select",
         "tableRef": "sellOtherWebsite",
         "id": "input20",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "true",

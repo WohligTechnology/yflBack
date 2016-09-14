@@ -127,7 +127,7 @@
         "url": ""
     }, {
         "name": "Please select the amenities offered at your studio*",
-        "type": "text",
+        "type": "chips",
         "tableRef": "amenities",
         "model": "amenities",
         "id": "input14",

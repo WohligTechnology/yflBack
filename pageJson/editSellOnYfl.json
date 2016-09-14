@@ -207,6 +207,7 @@
         "tableRef": "other",
         "model": "other",
         "id": "input20",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "true",
@@ -221,6 +222,7 @@
         "tableRef": "productsFrom",
         "model": "productsFrom",
         "id": "input18",
+        "option":"multiple",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Manufacture",
@@ -241,6 +243,7 @@
         "tableRef": "annualTurnover",
         "model": "annualTurnover",
         "id": "input18",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "Less-1lakh",
@@ -264,6 +267,7 @@
         "tableRef": "productSell",
         "model": "productSell",
         "id": "input18",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "1-10",
@@ -287,6 +291,7 @@
         "tableRef": "sellOtherWebsite",
         "model": "sellOtherWebsite",
         "id": "input20",
+        "option" : "single",
         "validation": ["required", "trim", "unique"],
         "url": [{
             "value": "true",
