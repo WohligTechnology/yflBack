@@ -12,26 +12,27 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // $state.go("page", {
     //     jsonName: "viewArtistCollaboration"
     // });
-     $scope.user = '';
-    // $scope.submitLogin = function(user) {
-    //     NavigationService.submitLogin(user, function(data) {
-    //         console.log(data);
-    //         if (data.value === true) {
-    //             $state.go("page", {
-    //                 jsonName: "viewMovie"
-    //             });
-    //             $.jStorage.set("user", data);
-    //         } else if (data.value === false) {
-    //             $scope.successmsg = "Email or Password is wrong";
-    //         }
-    //     }, function() {
-    //         console.log("Fail");
-    //     });
-    // };
+    $scope.user = '';
+    $scope.submitLogin = function(user) {
+        NavigationService.submitLogin(user, function(data) {
+            console.log(data);
+            if (data.value === true) {
+                $state.go("page", {
+                    jsonName: "viewArtistCollaboration"
+                });
+                $.jStorage.set("user", data);
+            } else if (data.value === false) {
+                $scope.successmsg = "Email or Password is wrong";
+            }
+        }, function() {
+            console.log("Fail");
+        });
+    };
 })
 
 .controller('ArtistCollaborationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     //Used to name the .html file
+    console.log("Checking12345");
     $scope.template = TemplateService.changecontent("artistcollaboration");
     $scope.menutitle = NavigationService.makeactive("artistcollaboration");
     TemplateService.title = $scope.menutitle;
@@ -763,8 +764,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
-    if ($.jStorage.get("user") === null) {
-        $state.go("artistcollaboration");
-    }
+    // if ($.jStorage.get("user") === null) {
+    //     $state.go("artistcollaboration");
+    // }
 
 });

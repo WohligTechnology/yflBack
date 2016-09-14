@@ -53,10 +53,18 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Address",
+        "name": "Address1",
         "type": "textarea",
-        "tableRef": "address",
-        "model": "address",
+        "tableRef": "address1",
+        "model": "address1",
+        "id": "input7",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Address2",
+        "type": "textarea",
+        "tableRef": "address2",
+        "model": "address2",
         "id": "input7",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -151,7 +159,7 @@
         "url": ""
     }, {
         "name": "Recipient",
-        "type": "text",
+        "type": "select",
         "tableRef": "recipient",
         "model": "recipient",
         "id": "input19",

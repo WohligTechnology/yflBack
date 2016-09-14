@@ -3,25 +3,29 @@
     "desciption": "",
     "pageType": "view",
     "fields": [{
-        "name": "First Name",
-        "isSort": "",
-        "tableRef": "firstName"
+        "name": "Store Name",
+        "tableRef": "storeName",
+        "isSort": ""
     }, {
-        "name": "Last Name",
-        "isSort": "",
-        "tableRef": "lastName"
+        "name": "Contact Person",
+        "tableRef": "contactPerson",
+        "isSort": ""
     }, {
-        "name": "Email",
-        "isSort": "",
-        "tableRef": "email"
+        "name": "Mobile",
+        "tableRef": "mobileNumber",
+        "isSort": ""
     }, {
-        "name": "Mobile Number",
-        "isSort": "",
-        "tableRef": "mobileNumber"
+        "name": "Primary Category",
+        "tableRef": "primaryCategory",
+        "isSort": ""
     }, {
         "name": "City",
-        "isSort": "",
-        "tableRef": "city"
+        "tableRef": "city",
+        "isSort": ""
+    }, {
+        "name": "Pincode",
+        "tableRef": "pincode",
+        "isSort": ""
     }],
     "action": [{
         "name": "edit",
@@ -55,7 +59,7 @@
         "color": "red",
         "action": "uploadcsv"
     }],
-    "excel":[{
+    "excel": [{
         "name": "excel",
         "icon": "excel",
         "color": "green",

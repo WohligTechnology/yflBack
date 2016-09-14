@@ -21,11 +21,19 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Phone Number - Landline and Mobile",
+        "name": "Mobile Number",
         "type": "text",
-        "tableRef": "phoneNumber",
-        "model": "phoneNumber",
-        "id": "input3",
+        "tableRef": "mobileNumber",
+        "model": "mobileNumber",
+        "id": "input5",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Land Line Number",
+        "type": "text",
+        "tableRef": "landlineNumber",
+        "model": "landlineNumber",
+        "id": "input6",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
@@ -102,7 +110,7 @@
         "url": ""
     }, {
         "name": "CST number",
-        "type": "image",
+        "type": "text",
         "tableRef": "cst",
         "model": "cst",
         "id": "input14",
@@ -110,7 +118,7 @@
         "url": ""
     }, {
         "name": "Don't have VAT/CST?",
-        "type": "checkbox",
+        "type": "text",
         "tableRef": "isVatCst",
         "model": "isVatCst",
         "id": "input15",
@@ -215,16 +223,16 @@
         "id": "input18",
         "validation": ["required", "trim", "unique"],
         "url": [{
-            "value": "1",
+            "value": "Manufacture",
             "name": "I manufacture them"
         }, {
-            "value": "2",
+            "value": "Resell",
             "name": "I resell product that I buy"
         }, {
-            "value": "3",
+            "value": "Sell",
             "name": "I sell products manufactured from me"
         }, {
-            "value": "4",
+            "value": "Import",
             "name": "I import them"
         }]
     }, {
@@ -235,19 +243,19 @@
         "id": "input18",
         "validation": ["required", "trim", "unique"],
         "url": [{
-            "value": "1",
+            "value": "Less-1lakh",
             "name": "Less than 1 Lakh"
         }, {
-            "value": "2",
+            "value": "Btwn 1-10 l",
             "name": "Between 1 Lakh and 10 Lakh"
         }, {
-            "value": "3",
+            "value": "Btwn 10 l-1 c",
             "name": "Between 10 Lakh and 1 crore"
         }, {
-            "value": "4",
+            "value": "More-1crore",
             "name": "More then 1 crore"
         }, {
-            "value": "5",
+            "value": "unknown",
             "name": "I don`t know"
         }]
     }, {

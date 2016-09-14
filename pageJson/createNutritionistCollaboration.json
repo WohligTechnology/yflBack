@@ -6,7 +6,7 @@
     "fields": [{
         "name": "First Name",
         "type": "text",
-        "model": "firstName",
+        "tableRef": "firstName",
         "id": "input1",
         "validation": ["required", "trim", "unique"],
         "url": ""
@@ -14,7 +14,6 @@
         "name": "Middle Name",
         "type": "text",
         "tableRef": "middleName",
-        "model": "middleName",
         "id": "input2",
         "validation": ["required", "trim", "unique"],
         "url": ""

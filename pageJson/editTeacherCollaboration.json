@@ -29,23 +29,77 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Address",
+        "name": "Email",
+        "type": "text",
+        "tableRef": "email",
+        "model": "email",
+        "id": "input4",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Mobile Number",
+        "type": "text",
+        "tableRef": "mobileNumber",
+        "model": "mobileNumber",
+        "id": "input9",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Landline Number",
+        "type": "text",
+        "tableRef": "landlineNumber",
+        "model": "landlineNumber",
+        "id": "input9",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+     }, {
+        "name": "City",
+        "type": "text",
+        "tableRef": "city",
+        "model": "city",
+        "id": "input8",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "State",
+        "type": "text",
+        "tableRef": "state",
+        "model": "state",
+        "id": "input10",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Country",
+        "type": "text",
+        "tableRef": "country",
+        "model": "country",
+        "id": "input11",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Pincode",
+        "type": "text",
+        "tableRef": "pincode",
+        "model": "pincode",
+        "id": "input9",
+        "validation": ["required", "trim", "unique"],
+        "url": ""
+    }, {
+        "name": "Address1",
         "type": "textarea",
-        "tableRef": "address",
-        "model": "address",
+        "tableRef": "address1",
+        "model": "address1",
         "id": "input7",
         "validation": ["required", "trim", "unique"],
         "url": ""
-
-    }, {
-        "name": "Present Age",
-        "type": "text",
-        "tableRef": "age",
-        "model": "age",
-        "id": "input5",
+     }, {
+        "name": "Address2",
+        "type": "textarea",
+        "tableRef": "address2",
+        "model": "address2",
+        "id": "input7",
         "validation": ["required", "trim", "unique"],
         "url": ""
-
     }, {
         "name": "Nationally",
         "type": "text",
@@ -55,101 +109,56 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Email",
+        "name": "Name of your organisation*",
         "type": "text",
-        "tableRef": "email",
-        "model": "email",
-        "id": "input4",
-        "validation": ["required", "trim", "unique"],
-        "url": ""
-    }, {
-
-        "name": "Phome Number",
-        "type": "text",
-        "tableRef": "phoneNumber",
-        "model": "phoneNumber",
-        "id": "input9",
-        "validation": ["required", "trim", "unique"],
-        "url": ""
-    }, {
-        "name": "Are you a certified yoga teacher? If yes, please specify certification details.",
-        "type": "text",
-        "tableRef": "certifiedYogaTeacher",
-        "model": "certifiedYogaTeacher",
-        "id": "input10",
-        "validation": ["required", "trim", "unique"],
-        "url": ""
-    }, {
-        "name": "Other qualifications",
-        "type": "text",
-        "tableRef": "otherQualifications",
-        "model": "otherQualifications",
+        "tableRef": "organizationName",
+        "model": "organizationName",
         "id": "input11",
         "validation": ["required", "trim", "unique"],
         "url": ""
 
     }, {
-        "name": "Professional Experience (Years, months)",
+        "name": "Give a brief description about the type of yoga taught at your institute*",
         "type": "text",
-        "tableRef": "professionalExperience",
-        "model": "professionalExperience",
+        "tableRef": "typeOfYoga",
+        "model": "typeOfYoga",
         "id": "input13",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Specialisation (Style of Yoga you teach)",
+        "name": "Please select the amenities offered at your studio*",
         "type": "text",
-        "tableRef": "specialisation",
-        "model": "specialisation",
+        "tableRef": "amenities",
+        "model": "amenities",
         "id": "input14",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Kindly select the level you teach from the below options.",
-        "type": "select",
-        "tableRef": "teachingLevel",
-        "model": "teachingLevel",
-        "id": "input15",
-        "validation": ["required", "trim", "unique"],
-        "url": [{
-            "value": "Beginner",
-            "name": "Beginner"
-        }, {
-            "value": "Intermediate",
-            "name": "Intermediate"
-        }, {
-            "value": "Advanced",
-            "name": "Advanced"
-        } {
-            "value": "Open level",
-            "name": "Open level"
-        }]
-    }, {
-        "name": "How much do you charge per session?",
+        "name": "Style of Yoga at your studio*",
         "type": "text",
-        "tableRef": "chargePerSession",
-        "model": "chargePerSession",
+        "tableRef": "styleOfYoga",
+        "model": "styleOfYoga",
         "id": "input16",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Studios you are affiliated with",
+        "name": "Please list the teachers/instructors at your studio",
         "type": "text",
-        "tableRef": "affiliatedStudios",
-        "model": "affiliatedStudios",
+        "tableRef": "listTeacher",
+        "model": "listTeacher",
         "id": "input17",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Briefly mention about your experience in Learning/Teaching Yoga.",
-        "type": "textarea",
-        "tableRef": "expInYoga",
-        "model": "expInYoga",
-        "id": "input18",
+        "name": "Kindly provide the class level*",
+        "type": "text",
+        "tableRef": "teachingLevel",
+        "model": "teachingLevel",
+        "id": "input15",
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Do you have an official website? If yes, please provide your website address.",
+        "name": "Do you have an official website?*",
         "type": "text",
         "tableRef": "officialWebsiteAddress",
         "model": "officialWebsiteAddress",
@@ -181,32 +190,10 @@
         "validation": ["required", "trim", "unique"],
         "url": ""
     }, {
-        "name": "Do you use a particular platform for your class scheduling?",
-        "type": "select",
-        "tableRef": "usePlatform",
-        "model": "usePlatform",
-        "id": "input15",
-        "validation": ["required", "trim", "unique"],
-        "url": [{
-            "value": "true",
-            "name": "Yes"
-        }, {
-            "value": "false",
-            "name": "No"
-        }]
-    }, {
-        "name": "Please share available hours and days from your schedule when you would be able to accommodate new classes.",
+        "name": "Do you have other branches?*",
         "type": "text",
-        "tableRef": "freeSchedule",
-        "model": "freeSchedule",
-        "id": "input16",
-        "validation": ["required", "trim", "unique"],
-        "url": ""
-    }, {
-        "name": "Feedback / Queries",
-        "type": "text",
-        "tableRef": "feedback",
-        "model": "feedback",
+        "tableRef": "listBranches",
+        "model": "listBranches",
         "id": "input17",
         "validation": ["required", "trim", "unique"],
         "url": ""

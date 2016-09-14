@@ -15,21 +15,21 @@ var navigationservice = angular.module('navigationservice', [])
         classis: "active",
         link: "#/page/viewArtistCollaboration",
         subnav: []
-    }, {
-        name: "Charity/Ngo Campaign",
-        classis: "active",
-        link: "#/page/viewCharityNgoCampaign",
-        subnav: []
-    }, {
-        name: "Chef Collaboration",
-        classis: "active",
-        link: "#/page/viewChefCollaboration",
-        subnav: []
-    }, {
-        name: "Foodie Collaboration",
-        classis: "active",
-        link: "#/page/viewFoodieCollaboration",
-        subnav: []
+    // }, {
+    //     name: "Charity/Ngo Campaign",
+    //     classis: "active",
+    //     link: "#/page/viewCharityNgoCampaign",
+    //     subnav: []
+    // }, {
+    //     name: "Chef Collaboration",
+    //     classis: "active",
+    //     link: "#/page/viewChefCollaboration",
+    //     subnav: []
+    // }, {
+    //     name: "Foodie Collaboration",
+    //     classis: "active",
+    //     link: "#/page/viewFoodieCollaboration",
+    //     subnav: []
     }, {
         name: "Nutritionist Collaboration",
         classis: "active",
@@ -50,26 +50,26 @@ var navigationservice = angular.module('navigationservice', [])
         classis: "active",
         link: "#/page/viewSellOnYfl",
         subnav: []
-    }, {
-        name: "Studio Listing",
-        classis: "active",
-        link: "#/page/viewStudioListing",
-        subnav: []
-    }, {
-        name: "StudioPartnership",
-        classis: "active",
-        link: "#/page/viewStudioPartnership",
-        subnav: []
+    // }, {
+    //     name: "Studio Listing",
+    //     classis: "active",
+    //     link: "#/page/viewStudioListing",
+    //     subnav: []
+    // }, {
+    //     name: "StudioPartnership",
+    //     classis: "active",
+    //     link: "#/page/viewStudioPartnership",
+    //     subnav: []
     }, {
         name: "Instructor/Teacher Collaboration",
         classis: "active",
         link: "#/page/viewTeacherCollaboration",
         subnav: []
-    }, {
-        name: "Yoga Enthusiast",
-        classis: "active",
-        link: "#/page/viewYogaEnthusiast",
-        subnav: []
+    // }, {
+    //     name: "Yoga Enthusiast",
+    //     classis: "active",
+    //     link: "#/page/viewYogaEnthusiast",
+    //     subnav: []
     }];
 
     return {

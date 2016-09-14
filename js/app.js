@@ -14,11 +14,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
     $stateProvider
 
-    //     .state('login', {
-    //     url: "/login",
-    //     templateUrl: "views/login.html",
-    //     controller: 'LoginCtrl'
-    // })
+        .state('login', {
+        url: "/login",
+        templateUrl: "views/login.html",
+        controller: 'LoginCtrl'
+    })
 
         .state('projects', {
         url: "/projects",
@@ -26,11 +26,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
         controller: 'ProjectsCtrl'
     })
 
-    .state('artistcollaboration', {
-            url: "artistcollaboration",
-            templateUrl: "views/template.html",
-            controller: 'ArtistCollaborationCtrl'
-        })
+    // .state('artistcollaboration', {
+    //         url: "artistcollaboration",
+    //         templateUrl: "views/template.html",
+    //         controller: 'ArtistCollaborationCtrl'
+    // })
         .state('api', {
             url: "/api/:id",
             templateUrl: "views/template.html",
@@ -54,7 +54,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
             controller: 'jsonViewCtrl'
         });
 
-    $urlRouterProvider.otherwise("/page/viewArtistCollaboration");
+    $urlRouterProvider.otherwise("/login");
 
 });
 
