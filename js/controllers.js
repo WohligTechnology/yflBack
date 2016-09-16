@@ -764,8 +764,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
-    // if ($.jStorage.get("user") === null) {
-    //     $state.go("artistcollaboration");
-    // }
+    if ($.jStorage.get("user") === null ) {
+        $state.go("login");
+    }
 
 });
