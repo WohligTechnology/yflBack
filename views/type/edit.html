@@ -89,7 +89,7 @@
 
             </div>
             <div ng-if="field.type=='chips'">
-                <label for="">{{field.name}}</label>
+                <label for="">{{field.name}}</label>{{json.editData[field.model]}}
                 <md-chips ng-model="json.editData[field.model]" ng-if="json.editData[field.model]"></md-chips>
                 <br/>
             </div>

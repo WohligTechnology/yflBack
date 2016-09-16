@@ -22,9 +22,9 @@
               >
           </md-autocomplete> -->
         <div class="pull-right">
-          <md-button aria-label="Excel" class="md-icon-button" ng-repeat="excel in json.excel" ng-click="performAction(excel,result)">
+          <!--<md-button aria-label="Excel" class="md-icon-button" ng-repeat="excel in json.excel" ng-click="performAction(excel,result)">
               <ng-md-icon class="" icon="{{excel.icon}}" size="20" style="fill:{{excel.color}};"></ng-md-icon>
-          </md-button>
+          </md-button>-->
             <a ui-sref="{{json.createButtonState}}" ng-hide="json.title=='All Newsletters' || json.title=='All Contacts' || json.title=='All Notification'">
                 <md-button class="md-fab md-primary md-mini" aria-label="Add Users">
                     <md-icon class="fa fa-plus plus-icon" ></md-icon>
